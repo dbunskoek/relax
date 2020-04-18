@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relax</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            datetime = new Date();
+            document.getElementById('time').innerHTML = datetime.getHours() + ':' + ('00' + datetime.getMinutes()).slice(-2);
+        }, false);
+    </script>
+    <style>
+html {
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    background: url('https://source.unsplash.com/random');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+p {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+
+    width: 336px;
+    height: 252px;
+
+    margin: 0;
+    padding: 0.5em 0.65em 0.35em;
+    border-radius: 12px;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    font-size: 5em;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+}
+
+#time {
+    font-size: 1.65em;
+    font-weight: 500;
+}
+    </style>
+</head>
+<body>
+<p>
+    Relax, it's<br>
+    <span id="time"></span>
+</p>
+</body>
+</html>
